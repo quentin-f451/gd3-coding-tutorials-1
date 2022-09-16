@@ -28,9 +28,9 @@ const hideAllListItemBody = () => {
 
 const replaceTextByDateOfBirth = () => {
   document.querySelectorAll(".list__item__artist").forEach((item) => {
-    const text = item.innerText;
+    const text = item.innerHTML;
     const dateOfBirth = text.slice(-5, -1);
-    item.innerText = dateOfBirth;
+    item.innerHTML = dateOfBirth;
   });
 };
 
